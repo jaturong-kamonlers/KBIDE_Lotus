@@ -145,6 +145,20 @@ module.exports = {
             ]
         },
         {
+            name : 'GPIO',
+            color : '20',
+            icon: `file:///${dirIcon}/static/icons/module.png`,
+            blocks : [
+                'analog_sensor',
+                'gpio_digital',
+                'gpio_analog',
+                'gpio_analog_pin',
+                'gpio_pwm_pin',
+                'gpio_i2c',
+                'gpio_spi',
+            ]
+        },
+        {
             name : 'Encoder x4',
             color : '290',
             icon: `file:///${dirIcon}/static/icons/module.png`,
