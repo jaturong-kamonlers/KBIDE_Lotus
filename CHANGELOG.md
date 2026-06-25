@@ -5,7 +5,25 @@
 
 ---
 
-## [Unreleased]
+## [1.0.0] — 2026-06-26
+
+### Added
+- **Full Windows installer** (`KBIDE_Lotus_Setup_1.0.0.exe`, 167 MB)
+  - NSIS-based installer with LZMA compression (~1.9 GB → 167 MB)
+  - Installs to `%LOCALAPPDATA%\Programs\KBIDE_Lotus` (no admin required)
+  - Desktop + Start Menu shortcuts
+  - Proper Add/Remove Programs uninstaller
+  - Uses Lotus icon (kblotusico.ico)
+  - Bundles the complete KBIDE runtime + all Lotus boards/plugins + MLX90614 fix
+
+### Notes
+- Full installer wraps the maintained KBIDE binary distribution from Maker Asia
+- All MIT/BSD/Apache licenses bundled in the installer payload
+- Installer signed by NSIS but not code-signed yet (Windows SmartScreen may warn on first run)
+
+---
+
+## [0.1.0] — 2026-06-25
 
 ### Fixed — MLX90614 ใช้งานไม่ได้บน LotusDevkit
 
