@@ -49,9 +49,16 @@ Use at your own risk. Authors not liable for any hardware damage.
 
 ## การติดตั้ง / Installation
 
-> ⚠️ Installer สำหรับ Windows / Ubuntu / Jetson Nano อยู่ระหว่างจัดทำ
+KBIDE_Lotus distribute เป็น **overlay pack** — ติดตั้ง KBIDE ของ Lotus Arduibot ก่อน แล้วแตก overlay ของเราทับ
+มี install script อัตโนมัติทั้ง PowerShell และ Bash ให้ใช้
 
-ระหว่างนี้ใช้วิธี extract จาก installer KBIDE ต้นฉบับแล้วแทนที่โฟลเดอร์ `boards/LotusDevkit/`, `boards/LotusDueBot/`, ฯลฯ ด้วยเวอร์ชันใน repo นี้
+ดูคู่มือเต็มที่ [`INSTALL.md`](INSTALL.md) หรือดาวน์โหลดจาก [Releases](https://github.com/jaturong-kamonlers/KBIDE_Lotus/releases)
+
+**สรุปสั้น ๆ:**
+- 🪟 Windows: เปิด PowerShell → `.\scripts\install-overlay.ps1`
+- 🐧 Linux / 🤖 Jetson: `sudo ./scripts/install-overlay.sh /opt/kbide`
+
+Script จะ backup `boards\`/`plugins\` เดิมไปไว้ที่ `backup_<timestamp>/` ก่อนแล้วค่อย overlay (ย้อนคืนได้)
 
 ---
 

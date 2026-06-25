@@ -38,11 +38,12 @@ jobs:
       - name: Build overlay payload
         run: |
           mkdir -p out/KBIDE_Lotus_overlay
-          cp -r boards plugins out/KBIDE_Lotus_overlay/
-          cp README.md NOTICE.md CHANGELOG.md out/KBIDE_Lotus_overlay/
+          cp -r boards plugins scripts out/KBIDE_Lotus_overlay/
+          cp README.md NOTICE.md CHANGELOG.md INSTALL.md out/KBIDE_Lotus_overlay/
           # Strip build caches just in case
           find out/KBIDE_Lotus_overlay -type d -name build -prune -exec rm -rf {} + || true
           find out/KBIDE_Lotus_overlay -type f \( -name '*.bak*' -o -name '*.tmp' \) -delete
+          chmod +x out/KBIDE_Lotus_overlay/scripts/install-overlay.sh || true
 
       - name: Create zip (Windows users)
         working-directory: out

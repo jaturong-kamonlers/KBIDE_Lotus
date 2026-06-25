@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: License files present
+      - name: License + docs present
         run: |
           set -e
           test -f boards/kidbright-arduino/LICENSE
@@ -23,7 +23,10 @@ jobs:
           test -f README.md
           test -f NOTICE.md
           test -f CHANGELOG.md
-          echo "✓ all required attribution files present"
+          test -f INSTALL.md
+          test -f scripts/install-overlay.ps1
+          test -f scripts/install-overlay.sh
+          echo "✓ all required attribution files + install scripts present"
 
       - name: Validate JS board configs parse
         run: |
