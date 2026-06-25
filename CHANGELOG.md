@@ -5,6 +5,21 @@
 
 ---
 
+## [1.0.1] — 2026-06-26
+
+### Fixed — LotusDueBot toolbox missing GPIO category
+
+7 pin-selector blocks (`gpio_digital`, `gpio_analog`, `gpio_analog_pin`,
+`gpio_pwm_pin`, `gpio_i2c`, `gpio_spi`) plus `analog_sensor` were defined in
+`blocks_gpio_pin.js` / `blocks_sensor.js` but never surfaced in the toolbox
+config — users could not drag them onto the workspace.
+
+Added a new **GPIO** category between *Motor & Servo* and *Encoder x4*.
+
+Patched file: `boards/LotusDueBot/block/config.js`
+
+---
+
 ## [1.0.0] — 2026-06-26
 
 ### Added
