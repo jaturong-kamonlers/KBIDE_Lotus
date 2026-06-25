@@ -1,0 +1,66 @@
+name: Lint & Sanity Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: License files present
+        run: |
+          set -e
+          test -f boards/kidbright-arduino/LICENSE
+          test -f boards/LotusDevkit/LICENSE
+          test -f LICENSE.electron.txt
+          test -f README.md
+          test -f NOTICE.md
+          test -f CHANGELOG.md
+          echo "✓ all required attribution files present"
+
+      - name: Validate JS board configs parse
+        run: |
+          for f in boards/LotusDevkit/config.js boards/LotusDevkit/block/config.js \
+                   boards/LotusDevkit/block/menu/config.group.sensor.js; do
+            if [ -f "$f" ]; then
+              node --check "$f" && echo "✓ $f"
+            fi
+          done
+
+      - name: Reject accidental large blobs (>10MB)
+        run: |
+          big=$(find . -path ./.git -prune -o -type f -size +10M -print | head -5)
+          if [ -n "$big" ]; then
+            echo "::error::Large files committed (>10MB):"
+            echo "$big"
+            exit 1
+          fi
+          echo "✓ no oversized files"
+
+      - name: Reject build cache leaking in
+        run: |
+          leaked=$(find boards -type d -name build -exec find {} -mindepth 1 -type f \; 2>/dev/null | head -3)
+          if [ -n "$leaked" ]; then
+            echo "::error::Build cache leaked into repo:"
+            echo "$leaked"
+            exit 1
+          fi
+          echo "✓ no build cache committed"
+
+      - name: Reject upstream binaries
+        run: |
+          banned="kbide.exe ffmpeg.dll libGLESv2.dll resources/app.asar"
+          for f in $banned; do
+            if [ -f "$f" ]; then
+              echo "::error::Upstream binary committed: $f (should be .gitignored)"
+              exit 1
+            fi
+          done
+          echo "✓ no upstream binaries"
