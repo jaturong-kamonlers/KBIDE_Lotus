@@ -1,0 +1,38 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+RtcDS1307	KEYWORD1
+RtcDateTime	KEYWORD1
+RtcTemperature	KEYWORD1
+EepromAt24c32	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+Begin	KEYWORD2
+GetDateTime	KEYWORD2
+SetDateTime	KEYWORD2
+GetIsRunning	KEYWORD2
+SetIsRunning	KEYWORD2
+SetSquareWavePin	KEYWORD2
+LastError	KEYWORD2
+Year	KEYWORD2
+Month	KEYWORD2
+Day	KEYWORD2
+Hour	KEYWORD2
+Minute	KEYWORD2
+Second	KEYWORD2
+AsFloatDegC	KEYWORD2
+AsFloatDegF	KEYWORD2
+SetMemory	KEYWORD2
+GetMemory	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+DS1307SquareWaveOut_Low	LITERAL1
+DS1307SquareWaveOut_High	LITERAL1
+DS1307SquareWaveOut_1Hz	LITERAL1
+DS1307SquareWaveOut_4kHz	LITERAL1
+DS1307SquareWaveOut_8kHz	LITERAL1
+DS1307SquareWaveOut_32kHz	LITERAL1

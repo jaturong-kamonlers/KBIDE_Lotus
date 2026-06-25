@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusBMP280",
+  "title"       : "LotusBMP280",
+  "keywords"    : "BMP280 Pressure Temperature Altitude",
+  "description" : "BMP280 Barometric Pressure & Temperature Plugin for Arduino AVR & ESP32",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32", "arduino-avr"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

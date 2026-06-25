@@ -1,0 +1,16 @@
+{
+  "name" : "LotusCompass",
+  "title": "LotusHMC5883L",
+  "keywords": "Compass Module",
+  "description": "Arduino AVR & ESP30 library",
+  "git": "",
+  "author": "",
+  "email": "",
+  "url": "",
+  "version": "1.0.0",
+  "board" : "",
+  "platform": ["arduino-esp32","arduino-avr"],
+  "license": "MIT",
+  "image" : "/static/display.jpg",
+  "homepage": ""
+}

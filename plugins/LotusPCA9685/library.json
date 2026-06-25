@@ -1,0 +1,7 @@
+{
+  "name": "LotusPCA9685", "title": "LotusPCA9685",
+  "keywords": "PCA9685 I2C PWM Servo Driver 16ch",
+  "description": "PCA9685 16-channel I2C PWM Servo Driver Plugin for Arduino AVR & ESP32",
+  "version": "1.0.0", "platform": ["arduino-esp32","arduino-avr"],
+  "license": "MIT", "image": "/static/display.jpg"
+}

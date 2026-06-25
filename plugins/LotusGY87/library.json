@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusGY87",
+  "title"       : "LotusGY87",
+  "keywords"    : "GY-87 MPU6050 HMC5883L BMP180 IMU 10DOF Madgwick AHRS",
+  "description" : "GY-87 10DOF IMU Plugin - MPU6050 + HMC5883L + BMP180 + Madgwick AHRS Filter",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32", "arduino-avr"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

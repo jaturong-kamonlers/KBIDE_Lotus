@@ -1,0 +1,15 @@
+{
+  "name": "Temp:ds18b20",
+  "title" : "LotusTempDS18B20",
+  "keywords": "Sensorstemperature, ds18b20",
+  "description": "",
+  "category":"Sensors",
+  "license": "MIT",
+  "git": "",
+  "author": "",
+  "email": "",
+  "url": "",
+  "version": "1.0.0",
+  "platform": ["arduino-avr"],
+  "image" : "/static/display.jpg"
+}

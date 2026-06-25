@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusBluetooth_BLE",
+  "title"       : "LotusBluetooth BLE",
+  "keywords"    : "BLE Bluetooth Low Energy ESP32 iPhone iPad Android NUS Nordic UART",
+  "description" : "BLE Plugin สำหรับ ESP32 รองรับ iPhone / iPad / Android ใช้ Nordic UART Service (NUS)",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

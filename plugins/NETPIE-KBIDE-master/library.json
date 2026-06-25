@@ -1,0 +1,16 @@
+{
+  "name": "netpie-arduino",
+  "title" : "NETPIE",
+  "keywords": "NETPIE",
+  "description": "ส่งข้อมูลเข้าแพลตฟอร์ม NETPIE",
+  "homepage": "https://www.ioxhop.com/",
+  "license": "MIT",
+  "git": "https://github.com/maxpromer/NETPIE",
+  "author": "NETPIE | block by Sonthaya Nongnuch",
+  "email": "max30012540@hotmail.com",
+  "url": "https://www.ioxhop.com/",
+  "version": "1.0.0",
+  "board" : "",
+  "platform": ["arduino-esp32"],
+  "image" : "/static/cover.png"
+}

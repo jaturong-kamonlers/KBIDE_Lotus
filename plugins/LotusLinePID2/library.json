@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusLinePID",
+  "title"       : "LotusLinePID",
+  "keywords"    : "PID Line Follower Sensor Track Robot QTR CD74HC4067",
+  "description" : "PID Line Tracking Plugin - รองรับ Digital, Analog, QTR-8A/RC, CD74HC4067 บน Arduino AVR & ESP32",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "2.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32", "arduino-avr"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

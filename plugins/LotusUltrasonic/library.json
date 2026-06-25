@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusUltrasonic",
+  "title"       : "LotusUltrasonic",
+  "keywords"    : "Ultrasonic HC-SR04 Distance Sensor",
+  "description" : "HC-SR04 Ultrasonic Distance Sensor Plugin for Arduino AVR & ESP32",
+  "git"         : "",
+  "author"      : "Lotus",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.1.0",
+  "board"       : "",
+  "platform"    : ["arduino-avr", "arduino-esp32"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

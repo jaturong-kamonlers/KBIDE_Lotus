@@ -1,0 +1,16 @@
+{
+  "name" : "Light Sensor BH1750",
+  "title": "LotusBH1750",
+  "category" : "Sensors",
+  "keywords": "light, light sensor",
+  "description": "Light Sensor IC",
+  "homepage": "",
+  "license": "MIT",
+  "git": "",
+  "author": "",
+  "url": "",
+  "version": "1.0.0",
+  "board" : "",
+  "platform": ["arduino-avr"],
+  "image" : "/static/display.jpg"
+}

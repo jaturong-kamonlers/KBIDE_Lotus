@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusMLX90614",
+  "title"       : "LotusMLX90614",
+  "keywords"    : "MLX90614 Infrared Temperature IR",
+  "description" : "MLX90614 Non-contact IR Temperature Sensor Plugin for Arduino AVR & ESP32",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32", "arduino-avr"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

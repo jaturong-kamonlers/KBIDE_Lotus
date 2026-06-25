@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusHuskyLens",
+  "title"       : "LotusHuskyLens",
+  "keywords"    : "HuskyLens Camera AI Face Object Line Color Tag Recognition",
+  "description" : "HuskyLens AI Camera Plugin for Arduino AVR & ESP32 - รองรับ I2C และ UART",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32", "arduino-avr"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

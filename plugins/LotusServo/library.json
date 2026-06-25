@@ -1,0 +1,16 @@
+{
+  "name"        : "LotusServo",
+  "title"       : "LotusServo",
+  "keywords"    : "Servo Motor PWM",
+  "description" : "Servo Motor Plugin for Arduino AVR & ESP32",
+  "git"         : "",
+  "author"      : "",
+  "email"       : "",
+  "url"         : "",
+  "version"     : "1.0.0",
+  "board"       : "",
+  "platform"    : ["arduino-esp32", "arduino-avr"],
+  "license"     : "MIT",
+  "image"       : "/static/display.jpg",
+  "homepage"    : ""
+}

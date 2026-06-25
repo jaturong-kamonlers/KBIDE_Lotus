@@ -1,0 +1,63 @@
+# ===== Build artifacts =====
+# Per-device compile cache — huge, regenerated on flash
+boards/*/build/*/
+**/build/*.o
+**/build/*.d
+**/build/*.a
+**/build/*.elf
+**/build/*.bin
+**/build/*.hex
+
+# ===== Backup / temp =====
+*.bak
+*.bak_*
+*~
+*.tmp
+*.log
+fixed_sketch/
+
+# ===== Upstream binaries (NOT redistributed from this repo) =====
+# Users should install KBIDE upstream from Maker Asia,
+# then overlay our boards/plugins on top.
+
+# Electron / Chromium runtime
+kbide.exe
+*.dll
+*.pak
+*.dat
+*.bin
+icudtl.dat
+natives_blob.bin
+snapshot_blob.bin
+v8_context_snapshot.bin
+chrome_*_percent.pak
+
+# Electron app bundle (Maker Asia's code, not ours)
+resources/
+locales/
+swiftshader/
+
+# Espressif ESP32 SDK + toolchains (1.3GB — comes from Espressif)
+platforms/
+
+# npm packages (from upstream KBIDE)
+packages/
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.claude/
+*.swp
+
+# ===== Install artifacts =====
+INSTALLED
+Uninstall*.exe
+
+# ===== Node / Electron build output =====
+node_modules/
+dist/
+out/
+release/

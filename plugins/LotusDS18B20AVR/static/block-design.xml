@@ -1,0 +1,276 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"/>
+    <field name="NAME">ds18b20_init</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="4^eI-53e3@NdeZlj(4;~">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 Init pin</field>
+            <next>
+              <block type="field_number" id="U|h7ocMULAJ=jTNk@w1A">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">pin</field>
+                <field name="MIN">0</field>
+                <field name="MAX">255</field>
+                <field name="PRECISION">0</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">init DS18B20</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="2.@*f1LIFV))[:klDEtQ"/>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="0#9Mn$n:3yJq;c(-!EG{"/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">ds18b20_get_devices_num</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="4^eI-53e3@NdeZlj(4;~">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 get number of devices</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">get number of connected devices.</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id=";)?~OtcMuLM8NgccG7u."/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">ds18b20_get_temperature</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="X4bhUkG.C;;3{up%^~%%">
+        <field name="INPUTNAME">device</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 get temperature (C) of device</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="mo`L]A7iBPn/)4~87o[A"/>
+          <block type="type_number" id="lOwaKZ94x;z5SBLr0bY^"/>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">get temperature of device index N</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id=";)?~OtcMuLM8NgccG7u."/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">ds18b20_get_temperature_f</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="X4bhUkG.C;;3{up%^~%%">
+        <field name="INPUTNAME">device</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 get temperature (F) of device</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="mo`L]A7iBPn/)4~87o[A"/>
+          <block type="type_number" id="lOwaKZ94x;z5SBLr0bY^"/>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">get temperature of device index N</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id=";)?~OtcMuLM8NgccG7u."/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">ds18b20_get_temperature_by_addr</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="X4bhUkG.C;;3{up%^~%%">
+        <field name="INPUTNAME">device</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 get temperature (C) of device address</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="mo`L]A7iBPn/)4~87o[A"/>
+          <block type="type_string" id="4qy|s#cClrcI1@jm.f(G"/>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">get temperature by device serial</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id=";)?~OtcMuLM8NgccG7u."/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">ds18b20_get_temperature_f_by_addr</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="X4bhUkG.C;;3{up%^~%%">
+        <field name="INPUTNAME">device</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 get temperature (F) of device address</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="mo`L]A7iBPn/)4~87o[A"/>
+          <block type="type_string" id="4qy|s#cClrcI1@jm.f(G"/>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">get temperature by device serial</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id=";)?~OtcMuLM8NgccG7u."/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=77;4DtW]z!1/cUMElY#" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">ds18b20_get_address_by_index</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="X4bhUkG.C;;3{up%^~%%">
+        <field name="INPUTNAME">device</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!}6/ndR^1||Q(tw$Udt$">
+            <field name="TEXT">DS18B20 get address of device</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="mo`L]A7iBPn/)4~87o[A"/>
+          <block type="type_number" id="-5]A/py7I4cVh}SB1o{1"/>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G7{,*:Zf%(z05YP8Xv6H" deletable="false" movable="false">
+        <field name="TEXT">get device address by given index</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="y.QI}9.+VeU`B48I|0vS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id=";)?~OtcMuLM8NgccG7u."/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Us*YTRcGh/WL3SXC{C(x">
+        <mutation colour="#a5805b"/>
+        <field name="HUE">30</field>
+      </block>
+    </value>
+  </block></xml>

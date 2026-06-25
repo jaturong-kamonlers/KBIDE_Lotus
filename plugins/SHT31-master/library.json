@@ -1,0 +1,16 @@
+{
+  "name" : "SHT31",
+  "title": "SHT31 sensor ",
+  "keywords": "SHT31,sht,31,sensor, temperature,temp,humidity,",
+  "description": "Sensirion Temperature/Humidity sensors are some of the finest & highest-accuracy devices you can get.",
+  "git": "https://github.com/PrinceBot-Ratthanin/SHT31/",
+  "author": "adafruit | Block by PrinceBot",
+  "email": "Print081@gmail.com",
+  "url": "https://github.com/PrinceBot-Ratthanin/SHT31/",
+  "version": "1.0.0",
+  "board" : "",
+  "platform": ["arduino-esp32"],
+  "license": "MIT",
+  "image" : "/static/SHT31.PNG",
+  "homepage": "https://www.adafruit.com/product/2857/"
+}

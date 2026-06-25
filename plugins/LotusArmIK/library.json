@@ -1,0 +1,7 @@
+{
+  "name": "LotusArmIK", "title": "LotusArmIK",
+  "keywords": "Inverse Kinematics Robot Arm 2DOF 3DOF 4DOF Servo PCA9685",
+  "description": "Robot Arm Inverse Kinematics Plugin - 2/3/4 DOF, PCA9685 or Servo.h",
+  "version": "1.0.0", "platform": ["arduino-esp32","arduino-avr"],
+  "license": "MIT", "image": "/static/display.jpg"
+}

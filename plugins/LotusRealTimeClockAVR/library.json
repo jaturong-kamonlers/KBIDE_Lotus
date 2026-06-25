@@ -1,0 +1,17 @@
+{
+  "name": "DS1307-Real-time clock Module",  
+  "title": "LotusRTC(DS1307)",
+  "keywords": "ds1307,rtc,real-time-clock,arduino-avr,lotus",
+  "description": "DS1307 Real-Time Clock Module for AVR boards with I2C interface",
+  "category": "Timing",
+  "git": "",
+  "author": "LotusArduiBot",
+  "email": "",
+  "url": "",
+  "version": "1.0.3",
+  "board": "",
+  "platform": ["arduino-avr"],  
+  "license": "MIT",
+  "image": "/static/display.jpg",
+  "homepage": ""
+}

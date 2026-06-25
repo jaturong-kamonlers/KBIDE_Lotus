@@ -1,0 +1,16 @@
+{
+  "name": "ServoArduinoNano",
+  "title" : "Servo motor for Arduino nano",
+  "keywords": "Servo",
+  "description": "KBIDE Library for Servo.h (Arduino-Nano).",
+  "homepage": "https://www.arduino.cc/en/Reference/Servo",
+  "category":"Sensors",
+  "license": "MIT",
+  "git": "https://github.com/PrinceBot-Ratthanin/servo-kbide-arduino-nano/",
+  "author": "Library by Comdet | blocks by PrinceBot",
+  "email": "print081@gmail.com",
+  "url": "https://github.com/PrinceBot-Ratthanin/servo-kbide-arduino-nano/",
+  "version": "1.0.0",
+  "platform": ["arduino-avr"],
+  "image" : "/static/display.jpg"
+}
